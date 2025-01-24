@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="location-input" placeholder="Şehir adı girin...">
+            <button onclick="searchWeather()">Ara</button>
+        </div>
+
+        <div class="weather-info" id="weather-info">
+            <div class="current-weather">
+                <h2 id="location">-</h2>
+                <div class="weather-main">
+                    <div id="weather-icon" class="weather-icon"></div>
+                    <div class="temp-info">
+                        <h1 id="temperature">-°C</h1>
+                        <p id="weather-desc">-</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <p>Nem: <span id="humidity">-%</span></p>
+                    <p>Rüzgar: <span id="wind">- km/s</span></p>
+                </div>
+            </div>
+
+            <div class="forecast" id="forecast">
+                <h3>7 Günlük Tahmin</h3>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
